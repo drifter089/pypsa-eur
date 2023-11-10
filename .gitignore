@@ -20,6 +20,8 @@ gurobi.log
 /notebooks
 /data
 /cutouts
+/infra/keys/svc.json
+/infra/.terraform
 
 doc/_build
 
