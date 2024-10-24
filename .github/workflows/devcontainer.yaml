@@ -36,7 +36,7 @@ jobs:
 
     - name: Test Container Image
       run: |
-        docker run --rm ghcr.io/${{ github.repository }} /bin/bash -c  "ls && bash test.sh"
+        docker run --rm ghcr.io/${{ github.repository }} /bin/bash -c  "bash test.sh"
 
     - name: Push Container Image
       if: ${{ success() }}
