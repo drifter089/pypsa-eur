@@ -2,9 +2,9 @@
 
 ls
 
-git clone https://github.com/PyPSA/pypsa-eur
+# git clone https://github.com/PyPSA/pypsa-eur
 
-git clone https://github.com/open-energy-transition/solver-benchmark
+# git clone https://github.com/open-energy-transition/solver-benchmark
 
 pip install git+https://github.com/open-energy-transition/linopy.git@only-generate-problem-files --no-deps
 
