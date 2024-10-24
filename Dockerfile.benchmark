@@ -4,6 +4,8 @@ RUN conda update -n base conda
 RUN conda install -n base conda-libmamba-solver
 RUN conda config --set solver libmamba
 
+COPY test.sh test.sh
+
 RUN apt-get update && apt-get install -y bash git
 
 RUN git clone https://github.com/PyPSA/pypsa-eur.git
