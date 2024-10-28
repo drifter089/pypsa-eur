@@ -32,9 +32,12 @@ snakemake -call all --cores all --printshellcmds --configfile  config/test/confi
 
 # time snakemake -call all --cores all --printshellcmds --configfile  config/test/config.electricity.yaml ; echo -e '\a'
 
-# cd ..
+cd ..
 
-# ls -R /tmp
+cd tmp/
+
+du -ah
+
 
 
 
