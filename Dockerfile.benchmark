@@ -5,7 +5,8 @@ RUN conda install -n base conda-libmamba-solver
 RUN conda config --set solver libmamba
 
 COPY test.sh test.sh
-COPY bench.py bench.pyd
+COPY bench.py bench.py
+COPY config_test.yaml config_test.yaml 
 
 RUN apt-get update && apt-get install -y bash git
 
