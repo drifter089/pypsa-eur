@@ -79,7 +79,7 @@ lines:
 
 solving:
   options:
-    only_generate_problem_file: true
+    only_generate_problem_file: "demo_lp"
   solver:
     name: highs
     options: highs-default
