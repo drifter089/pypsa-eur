@@ -5,7 +5,7 @@ RUN conda install -n base conda-libmamba-solver
 RUN conda config --set solver libmamba
 
 COPY test.sh test.sh
-COPY bench.py bench.py
+COPY bench.py bench.pyd
 
 RUN apt-get update && apt-get install -y bash git
 
@@ -24,3 +24,5 @@ SHELL ["/bin/bash", "--login", "-c"]
 ENV PATH /opt/conda/envs/pypsa-eur/bin:$PATH
 
 CMD ["bash"]
+
+
